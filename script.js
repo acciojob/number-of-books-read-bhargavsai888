@@ -19,11 +19,13 @@ const library = [
 const numberOfBooksRead = () => {
   // write your code here
 	var count=0;
-	for(let obj in library){
-		if(obj->readingStatus==true){
-			count++;
-		}
-	}
+	
+	 library.filter(function(item) {
+     (item.readingStatus==true){
+		 count++;
+	 }
+});
+
 	return count;
 };
 
